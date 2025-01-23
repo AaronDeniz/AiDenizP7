@@ -38,6 +38,12 @@ public class WPFollow : MonoBehaviour
         currentWP = 0; 
     }
 
+    public void GoToFactory()
+    {
+        g.AStar(currentNode, wps[4]);
+        currentWP = 0;
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {
